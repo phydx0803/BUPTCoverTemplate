@@ -1,0 +1,51 @@
+\documentclass[AutoFakeBold,zihao=-4,UTF8,]{ctexart}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage[a4paper,left=0pt,right=0pt,top=2.5cm,bottom=2.5cm]{geometry}
+\begin{document}
+\begin{titlepage}
+
+\newcommand\dunderline[3][-1pt]{{
+            \setbox0=\hbox{#3}
+            \ooalign{
+                \copy0\cr\rule[\dimexpr#1-#2\relax]{\wd0}{#2}}}}
+\newcommand{\titlelist}[2]{
+    \centering\songti\zihao{3}\bfseries #1\dunderline[-2pt]{2pt}{\makebox[9.5em][c]{#2}}}
+    \vspace*{-1mm}
+    \begin{center}
+        \includegraphics[scale = 0.25]{buptname.jpg}
+    \end{center}
+    \vspace{0mm}   
+    \begin{center}
+        \zihao{1}\sffamily\bfseries
+        北京邮电大学实验报告
+    \end{center}
+    \vspace{5mm}
+    \begin{center}
+        \includegraphics[scale = 0.25]{buptlogo.jpg}
+    \end{center}
+    \vspace{0mm}
+    \begin{center}
+        \sffamily\zihao{3}\bfseries
+        题目：\hspace{-1em}
+        \dunderline[-5pt]{2pt}{
+            \makebox[14em][c]{%标题下划线的宽度
+            阿司匹林简介}}
+    \end{center}
+    \vspace{8mm}
+    \begin{spacing}{1.6}
+        \titlelist{姓\qquad 名}{phy0803}\par
+        \titlelist{学\qquad 院}{信息与通信工程学院}\par
+        \titlelist{班\qquad 级}{2018211100}\par
+        \titlelist{学\qquad 号}{2018210000}\par
+        \titlelist{班内序号}{00}\par
+        \titlelist{指导教师}{维基百科}\par
+        \vspace{10mm}
+
+        \zihao{3}
+        \today
+    \end{spacing}
+    
+\end{titlepage}
+    \newpage
+\end{document}
